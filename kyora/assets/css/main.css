@@ -1,12 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300italic,400,600");
 @import url("font-awesome.min.css");
 
-/*
-	Overflow by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
-*/
-
 /* Reset */
 
 	html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
@@ -2017,21 +2011,17 @@
 
 /* Banner */
 
-	#banner {
-		height: 1000px;
-		position: relative;
-		color: #fff;
-		text-align: center;
-		background:  url("images/2nd.png") center no-repeat;
-		padding: 5em 0 5em 0;
-		margin: 0;
-		background-size: cover;
-	}
-
-		#banner .button {
-			color: #35b882;
-			text-shadow: 0 0 0.5px rgba(53, 184, 130, 0.25);
-		}
+		#banner {
+			position: relative;
+			height: 500px;
+			color: #fff;
+			text-align: center;
+			background:  url("images/2nd.png")center no-repeat;
+			padding:0;
+			margin: 0;
+			background-size:  125% auto;
+			background-size: cover;
+		}	
 
 		#banner header {
 			margin: 0 0 2em 0;
@@ -2106,8 +2096,7 @@
 		}
 
 
-		/* 3rd */	
-
+/* 3rd */	
 		#section_three{
 			height: 1280px;
 			position: relative;
@@ -2118,153 +2107,69 @@
 			background-size: cover;
 			background-size: 120%;
 		}
-		#section_three .left-text {
-			text-align: left;
-			color: #511f0a;
-			font-weight:bold;
-			padding: 300px 70px;
-			font-size: 18px;
-			letter-spacing: 2px;
-			line-height: 190%;
-		}
-		
 
 
+/* Additional */
 
-/* Poptrox */
 
-	.poptrox-popup {
-		-moz-box-sizing: content-box;
-		-webkit-box-sizing: content-box;
-		-ms-box-sizing: content-box;
-		box-sizing: content-box;
-		background: #fff;
-		padding-bottom: 3em;
-	}
+.cv_title {
+	background-color: #85313b;
+	color:white;
+	padding:1em 3em 1em 3em;
+	text-align: center;
+	margin: 0 auto;
+	width: 100%;
+	margin-bottom:40px;
+}
+.cv_title  p {
+	margin-bottom: 0 !important;
+}
 
-		.poptrox-popup .loader {
-			width: 48px;
-			height: 48px;
-			background: url("images/loader.gif");
-			position: absolute;
-			top: 50%;
-			left: 50%;
-			margin: -24px 0 0 -24px;
-		}
+.rules h2 {
+	text-align: left;
+	font-weight: bold;
+	border-bottom:2px dotted #85313b;
+	color: #85313b;
+	margin-bottom: 3px;
+}
+.rules h2 i {
+   padding:12px 20px;
+}
 
-		.poptrox-popup .caption {
-			position: absolute;
-			bottom: 0;
-			left: 0;
-			background: #fff;
-			width: 100%;
-			height: 3em;
-			line-height: 3em;
-			text-align: center;
-			cursor: default;
-			z-index: 1;
-		}
+.style3 .apply-list .default li  i {
+	color: #e5b844;
+	padding:12px 20px;
+}
+.style3 .apply-list ul.default li {
+	 margin-top:1em!important;
+}
+.chalkboard{
+	border:3px solid #e5b844;
+}
+.chalkboard .rules h2, .chalkboard {
+	background-color: #173707 !important ;
+	color:white;
+	border-bottom: 2px dotted white;
+}
 
-		.poptrox-popup .nav-next,
-		.poptrox-popup .nav-previous {
-			-moz-transition: opacity 0.5s ease-in-out;
-			-webkit-transition: opacity 0.5s ease-in-out;
-			-ms-transition: opacity 0.5s ease-in-out;
-			transition: opacity 0.5s ease-in-out;
-			position: absolute;
-			top: 0;
-			width: 50%;
-			height: 100%;
-			opacity: 0;
-			cursor: pointer;
-			background: rgba(0, 0, 0, 0.01);
-			-webkit-tap-highlight-color: rgba(255, 255, 255, 0);
-		}
+/* helper */
+.space-100 {
+	width: 100%;
+	height: 100px;
+}
+.disable{
+	text-decoration: none;
+	list-style-type: none; 
+	font-size: 18px !important;
+	line-height: 170%;
+ }
+.borderline{
+	border-bottom: 1.8px solid  #85313b;
+	width: 100%;
+	margin:  0 auto;
+}
 
-			.poptrox-popup .nav-next:before,
-			.poptrox-popup .nav-previous:before {
-				content: '';
-				position: absolute;
-				width: 96px;
-				height: 64px;
-				background: url("images/poptrox-nav.svg");
-				top: calc(50% - 1.5em);
-				margin: -32px 0 0 0;
-			}
 
-		.poptrox-popup:hover .nav-next,
-		.poptrox-popup:hover .nav-previous {
-			opacity: 0.5;
-		}
-
-			.poptrox-popup:hover .nav-next:hover,
-			.poptrox-popup:hover .nav-previous:hover {
-				opacity: 1.0;
-			}
-
-		.poptrox-popup .nav-next {
-			right: 0;
-		}
-
-			.poptrox-popup .nav-next:before {
-				right: 0;
-			}
-
-		.poptrox-popup .nav-previous {
-			left: 0;
-		}
-
-			.poptrox-popup .nav-previous:before {
-				-moz-transform: scaleX(-1);
-				-webkit-transform: scaleX(-1);
-				-ms-transform: scaleX(-1);
-				transform: scaleX(-1);
-				left: 0;
-				-ms-filter: "FlipH";
-				filter: FlipH;
-			}
-
-		.poptrox-popup .closer {
-			-moz-transition: opacity 0.5s ease-in-out;
-			-webkit-transition: opacity 0.5s ease-in-out;
-			-ms-transition: opacity 0.5s ease-in-out;
-			transition: opacity 0.5s ease-in-out;
-			position: absolute;
-			top: 0;
-			right: 0;
-			width: 64px;
-			height: 64px;
-			text-indent: -9999px;
-			z-index: 2;
-			opacity: 0;
-			-webkit-tap-highlight-color: rgba(255, 255, 255, 0);
-		}
-
-			.poptrox-popup .closer:before {
-				-moz-transition: background-color 0.5s ease-in-out;
-				-webkit-transition: background-color 0.5s ease-in-out;
-				-ms-transition: background-color 0.5s ease-in-out;
-				transition: background-color 0.5s ease-in-out;
-				content: '';
-				display: block;
-				position: absolute;
-				right: 16px;
-				top: 16px;
-				width: 40px;
-				height: 40px;
-				border-radius: 100%;
-				box-shadow: inset 0 0 0 1px #fff;
-				background: rgba(255, 255, 255, 0.1) url("images/poptrox-closer.svg") center center;
-				color: #fff !important;
-			}
-
-		.poptrox-popup:hover .closer {
-			opacity: 0.5;
-		}
-
-			.poptrox-popup:hover .closer:hover {
-				opacity: 1.0;
-			}
 
 /* Wide */
 
@@ -2299,7 +2204,7 @@
 
 			body {
 				background-color: #203936;
-				background-image: url("images/overlay.png"), url("../../images/bg-alt.jpg");
+				background-color: white;
 				background-repeat: repeat, no-repeat;
 				background-size: auto, 100% auto;
 				background-position: top left, top center;
@@ -2566,21 +2471,7 @@
 				margin: 0 0 4em 0;
 			}
 
-		/* Poptrox */
-
-			.poptrox-popup .nav-next,
-			.poptrox-popup .nav-previous {
-				opacity: 1.0;
-			}
-
-				.poptrox-popup .nav-next:before,
-				.poptrox-popup .nav-previous:before {
-					display: none;
-				}
-
-			.poptrox-popup .closer {
-				opacity: 0.5;
-			}
+		
 
 	}
 
