@@ -129,18 +129,15 @@ body {
 }
 
 
-h2 {
-    font-size: 52px;
-    font-weight: 700;
-    text-transform: uppercase;
-}
-
 
 #hero {
     background: url("images/image1.jpg") no-repeat ;
     background-position: top center ;
     background-size: cover;
     min-height: 1020px;
+}
+.sp-title img {
+    display: none;
 }
 
 /* ipad pro 1024*/
@@ -156,42 +153,17 @@ h2 {
     #hero {
         background: url("images/image1_sp.jpg") no-repeat;
         background-position: top center ;
-        background-size:contain;
-        max-height: 480px;
+        background-size:cover;
+        min-height: 600px;
      }
+     .sp-title img {
+        display: block;
+        width:93%;
+        margin: 0 auto;
+    }
 }
 
 /* 2nd */
-
-#second-col {
-    background: url("images/image2_bg.jpg") repeat ;
-    background-size: cover;
-    min-height: 1520px;
-}
-
-
-
-.textbox {
-    margin-top: 3em;
-    margin-left:5em;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -200,27 +172,6 @@ h2 {
     position: absolute;
     right: -135px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -285,59 +236,139 @@ h2 {
     padding: 0px 130px;
 }
 
-/*--経営者の悩み*/
+/* 経営者の悩み */
 
-.col-4-app {
-    width: 33.33%;
-    float: left;
-    padding: 0px 45px;
-}
-.col-6-app {
-    width: 66.66%;
-    float: left;
-    padding: 0px 45px;
+.second-col {
+   background: url("images/image2_bg.jpg") no-repeat;
+   display: block;
+   background-size: contain;
+   max-width: 1336px;
+   min-height: 1990px;
 }
 
+.second-col .container {
+    top:10em;
+    width:90%;
+    margin: 0 auto;
 
-.col-4-app p, 
-.col-6-app p {
-    font-family: 'HelveticaNeue-Thin';
-    font-size: 21px;
-    line-height: 24px;
-    color: #7e232e;
-
-
-
-}
-
-
-.row {
-    overflow: hidden;
-    margin-top: 50px;
-}
-
-.row h3 {
-    font-size: 24px;
-    text-transform: uppercase;
-    font-weight: 700;
-    margin: 30px 0;
-}
-
-
-
-
-/* NOSE SECTION */
-
-#nose {
-    background: url('../img/nose-bg.png');
-    background-size: cover;
-    background-position: center;
-}
-
+ }
 .download-info {
-    width: 50%;
-    padding: 200px 0px;
+    width: 100%;
+    padding: 8em 2em 1em 5em;
+    background: url("images/image3.png") bottom right no-repeat;
 }
+.download-info-3 {
+    width: 100%;
+    padding: 8em 2em 1em 5em;
+    background: url("images/image3_3.png") bottom right no-repeat;
+}
+.download-info-2 p .right {
+    width: 60%;
+    padding: 8em 5em 1em 5em;
+    float: right !important;
+}
+.download-info-2 img {
+    float: left !important;
+    padding:2em 7em 2em 2em;
+}
+.download-info p .emphasis,
+.download-info-2 p .emphasis,
+.download-info-3 p .emphasis
+ {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    letter-spacing: 2px;
+    line-height: 200% !important;
+    color:#7e232e;
+    font-size:31px !important;
+    font-weight: bold;
+}
+.download-info p,
+.download-info-2 p,
+.download-info-3 p
+{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    letter-spacing: 2px;
+    line-height: 200% !important;
+    color:#7e232e;
+    font-size:21px !important;
+    font-weight: bold;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* mobile4*/
+@media only screen and (max-width: 767px) {
+    .second-col {
+        background: url("images/image2_bg_sp.jpg") no-repeat;
+        background-size: cover;
+        max-width: 100%;
+        min-height: 1350px !important;
+    }     
+    .second-col .container {
+        top: 2em;
+        width: 90%;
+        background-size: contain;
+        margin: 0 auto;
+        background-color: white;
+        border-radius: 5px;
+        box-shadow: 3px 3px 5px #888888;
+        
+     }
+     .display-info,
+     .second-col .title img 
+      {
+        width: 90%;
+        top:2em;
+        display: block !important;
+        position: relative;
+        margin-bottom: 1em;
+      }
+      .download-info ,
+      .download-info-2 ,
+      .download-info-3 
+      {
+       display: block;
+       padding: 1em 0 0 0 !important;
+       margin: 0;
+       line-height: 0;
+       letter-spacing: 0;
+       font-size: 60%;
+
+      }
+      .download-info,
+      .download-info-3
+      {
+       background: none;
+
+      }
+    .download-info-2 img,
+
+     {
+       display: none; 
+     }
+     .download-info p,
+    .download-info-2 p,
+    .download-info-3 p {
+     font-size: 16px !important;
+     width: 90%;
+     padding-top: 2em;
+     margin: 0 auto;
+   
+    }
+    .download-info p .emphasis,
+    .download-info-2 p .emphasis,
+    .download-info-3 p .emphasis
+    {
+     font-size: 24px !important;
+    }
+}
+
+
+
 
 
 #nose h2 {
@@ -527,10 +558,7 @@ footer p {
         padding-right: 40px;
     }
     
-    .download-info {
-        width: 80%;
-    }
-    
+
 }
 
 

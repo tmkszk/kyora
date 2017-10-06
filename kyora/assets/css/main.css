@@ -92,7 +92,8 @@ video {
     vertical-align: baseline;
 }
 
-.chalkboard .title h2 {
+.chalkboard .title h2,
+.second-col .title h2, {
     font-size: 41px !important;
     font-weight: 500 !important;
     padding: 1em !important;
@@ -540,7 +541,6 @@ body {
 
 @media screen and (max-width: 1680px) {
     .row>* {
-        padding: 40px 0 0 40px;
     }
     .row {
         margin: -40px 0 -1px -40px;
@@ -1285,10 +1285,7 @@ body {
     -webkit-text-stroke: 0.25px;
 }
 
-body.is-scroll {
-    background-attachment: scroll, scroll;
-    background-size: auto, 100% auto;
-}
+
 
 body.is-loading * {
     -moz-transition: none !important;
@@ -1335,15 +1332,6 @@ h6 a {
     text-decoration: none;
 }
 
-h2 {
-    font-size: 1.25em;
-    letter-spacing: 8px;
-}
-
-h3 {
-    font-size: 1em;
-    letter-spacing: 5px;
-}
 
 strong,
 b {
@@ -1750,153 +1738,6 @@ button.style3:hover,
 }
 
 
-/* Box */
-
-.box {
-    position: relative;
-    margin-top: 9em;
-    margin-bottom: 0;
-}
-
-.box:after {
-    content: '';
-    display: block;
-    position: absolute;
-    top: -9em;
-    left: 50%;
-    height: 9em;
-    border-left: solid 1px #fff;
-}
-
-.box:before {
-    content: '';
-    display: block;
-    width: 90px;
-    height: 66px;
-    position: absolute;
-    left: 50%;
-    top: -4.5em;
-    margin-left: -45px;
-    margin-top: -33px;
-    background: url("images/arrow.svg") no-repeat;
-}
-
-.box :last-child {
-    margin-bottom: 20px;
-}
-
-.box.style1 {
-    background: #fff;
-    padding: 3em;
-}
-
-.box.style1 .image {
-    display: block;
-    position: absolute;
-    top: 0;
-    width: 50%;
-    height: 100%;
-    background: #152E33;
-    overflow: hidden;
-}
-
-.box.style1 .image img {
-    position: absolute;
-    top: 0;
-    height: 100%;
-    width: auto;
-}
-
-.box.style1 .inner> :last-child {
-    margin: 0;
-}
-
-.box.style1.right .image {
-    left: 0;
-}
-
-.box.style1.right .image img {
-    right: 0;
-}
-
-.box.style1.right .inner {
-    margin-left: 50%;
-    padding-left: 3em;
-}
-
-.box.style1.left .image {
-    right: 0;
-}
-
-.box.style1.left .image img {
-    left: 0;
-}
-
-.box.style1.left .inner {
-    margin-right: 50%;
-    padding-right: 3em;
-}
-
-.box.style2 {
-    text-align: center;
-}
-
-.box.style2 header {
-    display: inline-block;
-    background: #fff;
-    padding: 2em 3em 2em 3em;
-    margin: 0;
-}
-
-.box.style2 header p {
-    padding: 0;
-}
-
-.box.style2 .inner {
-    position: relative;
-    padding: 40px 0 0px 0;
-}
-
-.box.style2 .inner:after {
-    content: '';
-    display: block;
-    position: absolute;
-    top: 0;
-    left: 50%;
-    height: 100%;
-    border-left: solid 1px #fff;
-}
-
-.box.style2 .inner .row {
-    position: relative;
-}
-
-.box.style2 .inner .row:before {
-    content: '';
-    display: block;
-    position: absolute;
-    top: 50%;
-    left: 20px;
-    width: calc(100% - 40px);
-    border-bottom: solid 1px #fff;
-}
-
-.box.style2 .inner .image {
-    position: relative;
-    z-index: 1;
-    padding: 20px;
-}
-
-.box.style3 {
-    background: #fff;
-    padding: 1em;
-}
-
-.box.style3 header {
-    text-align: center;
-}
-
-
 /* Icons */
 
 .icon {
@@ -2177,7 +2018,6 @@ button.style3:hover,
         background-repeat: repeat, no-repeat;
         background-size: auto, 100% auto;
         background-position: top left, top center;
-        background-attachment: scroll, scroll;
         font-size: 14pt;
     }
     input,
