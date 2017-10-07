@@ -1,0 +1,241 @@
+
+/*common*/
+    .sp{
+        display: none;
+    }
+    .img-pc{
+        display:block;
+    }
+@media only screen and (max-width: 767px) {
+    .img-pc{
+        display:none;
+    }
+    .sp{
+        display: block;
+    }
+    .disable{
+        font-size: 14px !important;
+    }
+}
+/* 1st col*/
+#hero {
+    background: url("images/image1.jpg") no-repeat ;
+    background-position: top center ;
+    background-size: cover;
+    min-height: 1020px;
+}
+.sp-title img {
+    display: none;
+}
+
+/* ipad pro 1024*/
+@media only screen and (max-width: 1024px) {
+    #hero {
+        min-height: 900px;
+     }
+     
+}
+/* mobile4*/
+
+@media only screen and (max-width: 767px) {
+    #hero {
+        background: url("images/image1_sp.jpg") no-repeat;
+        background-position: top center ;
+        background-size:cover;
+        min-height: 600px;
+     }
+     .sp-title img {
+        display: block;
+        width:93%;
+        margin: 0 auto;
+    }
+}
+
+
+/* 経営者の悩み */
+
+.second-col {
+    background: url("images/image2_bg.jpg") no-repeat;
+    display: block;
+    background-size: cover;
+ }
+ 
+ .second-col .container {
+     top:10em;
+     width:90%;
+     margin: 0 auto;
+ 
+  }
+ .download-info {
+     width: 100%;
+     padding: 8em 2em 1em 5em;
+     background: url("images/image3.png") bottom right no-repeat;
+ }
+ .download-info-3 {
+     width: 100%;
+     padding: 8em 2em 1em 5em;
+     background: url("images/image3_3.png") bottom right no-repeat;
+ }
+ .download-info-2 p .right {
+     width: 60%;
+     padding: 8em 5em 1em 5em;
+     float: right !important;
+ }
+ .download-info-2 img{
+     float: left;
+     padding:2em 7em 2em 2em;
+ }
+ .download-info p .emphasis,
+ .download-info-2 p .emphasis,
+ .download-info-3 p .emphasis
+  {
+     margin: 0;
+     padding: 0;
+     border: 0;
+     letter-spacing: 2px;
+     line-height: 200% !important;
+     color:#7e232e;
+     font-size:31px !important;
+     font-weight: bold;
+ }
+ .download-info p,
+ .download-info-2 p,
+ .download-info-3 p
+ {
+     margin: 0;
+     padding: 0;
+     border: 0;
+     letter-spacing: 2px;
+     line-height: 200% !important;
+     color:#7e232e;
+     font-size:21px !important;
+     font-weight: bold;
+     font: inherit;
+     vertical-align: baseline;
+ }
+ 
+ /* mobile*/
+ @media only screen and (max-width: 767px) {
+     .second-col {
+         background: url("images/image2_bg_sp.jpg") repeat;
+         background-size: contain;
+         max-width: 100%;
+     }     
+     .second-col .container {
+         top: 1em;
+         width: 90%;
+         background-size: contain;
+         margin: 0 auto;
+         background-color: white;
+         border-radius: 5px;
+         box-shadow: 3px 3px 5px #888888;
+         
+      }
+      .display-info,
+      .second-col .title img 
+       {
+         width: 90%;
+         display: block !important;
+         position: relative;
+         margin-bottom: 1em;
+       }
+       .download-info ,
+       .download-info-2 ,
+       .download-info-3 
+       {
+        display: block;
+        padding: 1em 0 0 0 !important;
+        margin: 0;
+        line-height: 0;
+        letter-spacing: 0;
+        font-size: 60%;
+ 
+       }
+       .download-info,
+       .download-info-3
+       {
+        background: none;
+ 
+       }
+     .download-info-2-sp
+      {
+        display: none;
+
+      }
+     .download-info p,
+     .download-info-2 p,
+     .download-info-3 p {
+      font-size: 16px !important;
+      width: 90%;
+      padding-top: 2em;
+      margin: 0 auto;
+    
+     }
+     .download-info p .emphasis,
+     .download-info-2 p .emphasis,
+     .download-info-3 p .emphasis
+     {
+      font-size: 24px !important;
+     }
+ }
+
+/*女性従業員の信頼を勝ち得る*/
+.three-col {
+    background: url("images/image3_bg.jpg") no-repeat;
+    display: block;
+    background-size: cover;
+}
+
+.three-col .cnt {
+    font-size: 31px !important;
+    text-align: left;
+    color:#511f0a;
+    line-height: 200%;
+    letter-spacing: 2px;
+    padding:2em 0;
+    text-shadow: 2px 2px white;
+}
+/* mobile*/
+@media only screen and (max-width: 767px) {
+
+    .three-col .cnt p {
+     font-size: 21px !important;
+     letter-spacing:0 !important;
+     line-height: 200%;
+     font-weight: 500;
+     text-shadow: 2px 2px white;
+    }
+    .three-col .cnt br{
+        display:none;
+    }
+    
+}
+
+
+/*バナ-*/
+.four-col {
+    background: url("images/image4_bg.jpg") no-repeat;
+    display: block;
+    background-size: cover;
+    height: 884px;  
+}
+@media only screen and (max-width: 767px) {
+    .four-col {
+        background:none;
+        height: auto;
+    }
+}
+/*ベジえのこだわり*/
+.five-col {
+    background:white;
+    max-width: 1336px;
+    min-height: 2000px;
+ }
+ .five-col{
+    background: url("images/image5_bg.png") no-repeat;
+    display: block;
+    background-size:contain;
+    height: 4400px;
+    margin: 0 auto;
+    
+ }
