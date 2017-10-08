@@ -207,48 +207,59 @@
          </section>	
          </div>		
       </article>
-      <!-- Contact Form  -->
-      <!-- Abinash section-->
       <div class="pc-mg-100"></div>
       <div class="cv_title">
          応募の詳細はこちら！
       </div>
       <div class="pc-mg-100"></div>
-      <article class="container box style3">
-         <form method="post" action="#">
-            <div class="row" style="margin :0 auto;">
-               <div class="borderline">
+       <!-- Contact Form  -->
+       <!-- Abinash section-->
+       <article class="container box style3" ng-app="myApp" ng-controller="FormController">
+            <form name="myForm" method="post" ng-submit="sendEmail()">
+                  <div class="row" style="margin :0 auto;">
+                  <div class="borderline">
                   <label>会社名</label>
-                  <div class="12u 12u$(mobile)"><input type="text" class="text" name="surname" placeholder="会社名" /></div>
-               </div>
-               <div class="borderline">
+                        <div class="12u 12u$(mobile)"><input type="text" class="text" name="companyname" placeholder="会社名" ng-model="companyname" required />
+                        <span style="color:red" ng-show="submitted && myForm.companyname.$error.required">会社名を入力してください。</span>
+                        </div>
+                  </div>
+                  <div class="borderline">
                   <label>会社住所</label>
-                  <div class="12u 12u$(mobile)"><input type="text" class="text" name="surname" placeholder="会社住所" /></div>
-               </div>
-               <div class="borderline">
+                  <div class="12u 12u$(mobile)"><input type="text" class="text" name="companyaddress" placeholder="会社住所" ng-model="companyaddress" required />
+                        <span style="color:red" ng-show="submitted && myForm.companyaddress.$error.required">会社住所を入力してください。</span>
+                  </div>
+                  </div>
+                  <div class="borderline">
                   <label>名前</label>
-                  <div class="12u 12u$(mobile)"><input type="text" class="text" name="surname" placeholder="名前" /></div>
-               </div>
-               <div class="borderline">
+                  <div class="12u 12u$(mobile)"><input type="text" class="text" name="name" placeholder="名前" ng-model="name" required />
+                        <span style="color:red" ng-show="submitted && myForm.name.$error.required">名前を入力してください。</span>
+                  </div>
+                        </div>
+                  <div class="borderline">
                   <label>メールアドレス</label>
-                  <div class="12u 12u$(mobile)"><input type="text" class="text" name="surname" placeholder="メールアドレス" /></div>
-               </div>
-               <div class="borderline">
+                  <div class="12u 12u$(mobile)"><input type="email" class="text" name="mailaddress" placeholder="メールアドレス" ng-model="mailaddress" required />
+                        <span style="color:red" ng-show="submitted && myForm.mailaddress.$error.required">メールアドレスを入力してください。</span>
+                  </div>
+                        </div>
+                  <div class="borderline">
                   <label>SNSアカウント</label>
-                  <div class="12u 12u$(mobile)"><input type="text" class="text" name="surname" placeholder="SNSアカウント" /></div>
-               </div>
-               <label>応募動機</label>
-               <div class="12u$ 12u$(mobile)">
-                  <textarea name="message" placeholder="応募動機"></textarea>
-               </div>
-               <div class="12u$ 12u$(mobile)">
-                  <ul >
-                     <input style ="width: 100%;" type="submit" value="応募する" />
-                  </ul>
-               </div>
-         </form>
-      </article>
-      <!-- Abinash section close-->
+                  <div class="12u 12u$(mobile)"><input type="text" class="text" name="snsaccount" placeholder="SNSアカウント" ng-model="snsaccount" required />
+                        <span style="color:red" ng-show="submitted && myForm.snsaccount.$error.required">SNSアカウントを入力してください。</span>
+                  </div>
+                        </div>
+                  <label>応募動機</label>
+                  <div class="12u$ 12u$(mobile)">
+                        <textarea name="message" placeholder="応募動機" ng-model="message" required></textarea>
+                        <span style="color:red" ng-show="submitted && myForm.message.$error.required">応募動機を入力してください。</span>					
+                  </div>
+                  <div class="12u$ 12u$(mobile)">
+                        <ul >
+                              <input style ="width: 100%;" type="submit" value="応募する" ng-click="submitted=true"/>
+                        </ul>
+                  </div>
+            </form>
+      </article>	
+     
       <div class="pc-mg-100"></div>
       <div class="cv_title">
       規約事項・注意事項
@@ -539,47 +550,58 @@
       </section>	
       </div>		
       </article>
-      <!-- Contact Form  -->
-      <!-- Abinash section-->
       <div class="pc-mg-100"></div>
       <div class="cv_title">
          応募の詳細はこちら！
       </div>
       <div class="pc-mg-100"></div>
-      <article class="container box style3">
-         <form method="post" action="#">
-            <div class="row" style="margin :0 auto;">
-               <div class="borderline">
+      <!-- Contact Form  -->
+      <!-- Abinash section-->
+      <article class="container box style3" ng-app="myApp" ng-controller="FormController">
+            <form name="myForm" method="post" ng-submit="sendEmail()">
+                  <div class="row" style="margin :0 auto;">
+                  <div class="borderline">
                   <label>会社名</label>
-                  <div class="12u 12u$(mobile)"><input type="text" class="text" name="surname" placeholder="会社名" /></div>
-               </div>
-               <div class="borderline">
+                        <div class="12u 12u$(mobile)"><input type="text" class="text" name="companyname" placeholder="会社名" ng-model="companyname" required />
+                        <span style="color:red" ng-show="submitted && myForm.companyname.$error.required">会社名を入力してください。</span>
+                        </div>
+                  </div>
+                  <div class="borderline">
                   <label>会社住所</label>
-                  <div class="12u 12u$(mobile)"><input type="text" class="text" name="surname" placeholder="会社住所" /></div>
-               </div>
-               <div class="borderline">
+                  <div class="12u 12u$(mobile)"><input type="text" class="text" name="companyaddress" placeholder="会社住所" ng-model="companyaddress" required />
+                        <span style="color:red" ng-show="submitted && myForm.companyaddress.$error.required">会社住所を入力してください。</span>
+                  </div>
+                  </div>
+                  <div class="borderline">
                   <label>名前</label>
-                  <div class="12u 12u$(mobile)"><input type="text" class="text" name="surname" placeholder="名前" /></div>
-               </div>
-               <div class="borderline">
+                  <div class="12u 12u$(mobile)"><input type="text" class="text" name="name" placeholder="名前" ng-model="name" required />
+                        <span style="color:red" ng-show="submitted && myForm.name.$error.required">名前を入力してください。</span>
+                  </div>
+                        </div>
+                  <div class="borderline">
                   <label>メールアドレス</label>
-                  <div class="12u 12u$(mobile)"><input type="text" class="text" name="surname" placeholder="メールアドレス" /></div>
-               </div>
-               <div class="borderline">
+                  <div class="12u 12u$(mobile)"><input type="email" class="text" name="mailaddress" placeholder="メールアドレス" ng-model="mailaddress" required />
+                        <span style="color:red" ng-show="submitted && myForm.mailaddress.$error.required">メールアドレスを入力してください。</span>
+                  </div>
+                        </div>
+                  <div class="borderline">
                   <label>SNSアカウント</label>
-                  <div class="12u 12u$(mobile)"><input type="text" class="text" name="surname" placeholder="SNSアカウント" /></div>
-               </div>
-               <label>応募動機</label>
-               <div class="12u$ 12u$(mobile)">
-                  <textarea name="message" placeholder="応募動機"></textarea>
-               </div>
-               <div class="12u$ 12u$(mobile)">
-                  <ul >
-                     <input style ="width: 100%;" type="submit" value="応募する" />
-                  </ul>
-               </div>
-         </form>
-      </article>
+                  <div class="12u 12u$(mobile)"><input type="text" class="text" name="snsaccount" placeholder="SNSアカウント" ng-model="snsaccount" required />
+                        <span style="color:red" ng-show="submitted && myForm.snsaccount.$error.required">SNSアカウントを入力してください。</span>
+                  </div>
+                        </div>
+                  <label>応募動機</label>
+                  <div class="12u$ 12u$(mobile)">
+                        <textarea name="message" placeholder="応募動機" ng-model="message" required></textarea>
+                        <span style="color:red" ng-show="submitted && myForm.message.$error.required">応募動機を入力してください。</span>					
+                  </div>
+                  <div class="12u$ 12u$(mobile)">
+                        <ul >
+                              <input style ="width: 100%;" type="submit" value="応募する" ng-click="submitted=true"/>
+                        </ul>
+                  </div>
+            </form>
+      </article>		
         <!-- Abinash section close-->
       <div class="pc-mg-100"></div>
       <div class="cv_title">
@@ -744,47 +766,59 @@
       </section>	
       </div>		
       </article>
-      <!-- Contact Form  -->
-     <!-- Abinash section-->
       <div class="pc-mg-100"></div>
       <div class="cv_title">
          応募の詳細はこちら！
       </div>
       <div class="pc-mg-100"></div>
-      <article class="container box style3">
-         <form method="post" action="#">
-            <div class="row" style="margin :0 auto;">
-            <div class="borderline">
-               <label>会社名</label>
-               <div class="12u 12u$(mobile)"><input type="text" class="text" name="surname" placeholder="会社名" /></div>
-            </div>
-            <div class="borderline">
-               <label>会社住所</label>
-               <div class="12u 12u$(mobile)"><input type="text" class="text" name="surname" placeholder="会社住所" /></div>
-            </div>
-            <div class="borderline">
-               <label>名前</label>
-               <div class="12u 12u$(mobile)"><input type="text" class="text" name="surname" placeholder="名前" /></div>
-            </div>
-            <div class="borderline">
-               <label>メールアドレス</label>
-               <div class="12u 12u$(mobile)"><input type="text" class="text" name="surname" placeholder="メールアドレス" /></div>
-            </div>
-            <div class="borderline">
-               <label>SNSアカウント</label>
-               <div class="12u 12u$(mobile)"><input type="text" class="text" name="surname" placeholder="SNSアカウント" /></div>
-            </div>
-            <label>応募動機</label>
-            <div class="12u$ 12u$(mobile)">
-               <textarea name="message" placeholder="応募動機"></textarea>
-            </div>
-            <div class="12u$ 12u$(mobile)">
-               <ul >
-                  <input style ="width: 100%;" type="submit" value="応募する" />
-               </ul>
-            </div>
-         </form>
-      </article>
+      <!-- Contact Form  -->
+       <!-- Abinash section-->
+       <article class="container box style3" ng-app="myApp" ng-controller="FormController">
+            <form name="myForm" method="post" ng-submit="sendEmail()">
+                  <div class="row" style="margin :0 auto;">
+                  <div class="borderline">
+                  <label>会社名</label>
+                        <div class="12u 12u$(mobile)"><input type="text" class="text" name="companyname" placeholder="会社名" ng-model="companyname" required />
+                        <span style="color:red" ng-show="submitted && myForm.companyname.$error.required">会社名を入力してください。</span>
+                        </div>
+                  </div>
+                  <div class="borderline">
+                  <label>会社住所</label>
+                  <div class="12u 12u$(mobile)"><input type="text" class="text" name="companyaddress" placeholder="会社住所" ng-model="companyaddress" required />
+                        <span style="color:red" ng-show="submitted && myForm.companyaddress.$error.required">会社住所を入力してください。</span>
+                  </div>
+                  </div>
+                  <div class="borderline">
+                  <label>名前</label>
+                  <div class="12u 12u$(mobile)"><input type="text" class="text" name="name" placeholder="名前" ng-model="name" required />
+                        <span style="color:red" ng-show="submitted && myForm.name.$error.required">名前を入力してください。</span>
+                  </div>
+                        </div>
+                  <div class="borderline">
+                  <label>メールアドレス</label>
+                  <div class="12u 12u$(mobile)"><input type="email" class="text" name="mailaddress" placeholder="メールアドレス" ng-model="mailaddress" required />
+                        <span style="color:red" ng-show="submitted && myForm.mailaddress.$error.required">メールアドレスを入力してください。</span>
+                  </div>
+                        </div>
+                  <div class="borderline">
+                  <label>SNSアカウント</label>
+                  <div class="12u 12u$(mobile)"><input type="text" class="text" name="snsaccount" placeholder="SNSアカウント" ng-model="snsaccount" required />
+                        <span style="color:red" ng-show="submitted && myForm.snsaccount.$error.required">SNSアカウントを入力してください。</span>
+                  </div>
+                        </div>
+                  <label>応募動機</label>
+                  <div class="12u$ 12u$(mobile)">
+                        <textarea name="message" placeholder="応募動機" ng-model="message" required></textarea>
+                        <span style="color:red" ng-show="submitted && myForm.message.$error.required">応募動機を入力してください。</span>					
+                  </div>
+                  <div class="12u$ 12u$(mobile)">
+                        <ul >
+                              <input style ="width: 100%;" type="submit" value="応募する" ng-click="submitted=true"/>
+                        </ul>
+                  </div>
+            </form>
+      </article>		 
+    
       <!-- Abinash section Close-->
       <div class="pc-mg-100"></div>
       <div class="cv_title">
@@ -824,11 +858,9 @@
       <!-- ROOP3 close-->
       <!-- Scripts -->
       <script src="assets/js/jquery.min.js"></script>
-      <!--<script src="assets/js/jquery.scrolly.min.js"></script>-->
-      <!--<script src="assets/js/jquery.poptrox.min.js"></script>-->
-      <!--<script src="assets/js/skel.min.js"></script>-->
-      <!--<script src="assets/js/util.js"></script>-->
-      <!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
       <script src="assets/js/main.js"></script>
+      <!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+      <script src="assets/js/angular/controllers.js"></script>
+      
    </body>
 </html>
