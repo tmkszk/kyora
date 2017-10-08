@@ -1353,11 +1353,12 @@
 		text-shadow: 0 0 0.5px rgba(58, 57, 57, 0.25);
 		-webkit-text-stroke: 0.25px;
 	}
-
+	
 	h1, h2, h3, h4, h5, h6 {
-		font-weight: 400;
+		font-weight: 500;
 		text-transform: uppercase;
 		line-height: 1.75em;
+
 	}
 
 	h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
@@ -1501,10 +1502,10 @@
 
 /* List */
 
-	ul.default {
+/*	ul.default {
 		list-style: disc;
 		padding-left: 1em;
-	}
+	}*/
 
 		ul.default li {
 			padding-left: 1.5em;

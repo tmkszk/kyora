@@ -6,6 +6,25 @@
     .img-pc{
         display:block;
     }
+    .disable{
+        text-decoration: none;
+        list-style-type: none; 
+        font-size: 19px !important;
+        line-height: 170%;
+        color:#85313b;
+    }
+    .red {
+        color:#f14504;
+    }
+  
+    .boxshadow{
+        box-shadow: 5px 5px 5px #888888;
+    }
+    .line {
+        border: dotted 1px #511f0a;
+        padding: 20px;
+    }
+
 @media only screen and (max-width: 767px) {
     .img-pc{
         display:none;
@@ -16,6 +35,18 @@
     .disable{
         font-size: 14px !important;
     }
+    h1 {
+		color:#85313b;
+		font-size:24px;
+        padding:1em 0;
+        font-weight: 500;
+        text-align: center;
+    }
+    .sp-big{
+        font-weight: 600;
+        font-size: 31px
+    }
+
 }
 /* 1st col*/
 #hero {
@@ -226,16 +257,54 @@
     }
 }
 /*ベジえのこだわり*/
-.five-col {
-    background:white;
-    max-width: 1336px;
-    min-height: 2000px;
- }
- .five-col{
+ .five-col .container{
     background: url("images/image5_bg.png") no-repeat;
     display: block;
     background-size:contain;
-    height: 4400px;
+    height: 3000px;
     margin: 0 auto;
     
+ }
+ .five-col-sp,
+ .six-col-sp
+ {
+    display: none;
+ }
+
+ @media only screen and (max-width: 767px) {
+    .five-col,
+    .six-col {
+       display: none;
+    }  
+    .five-col-sp,
+    .six-col-sp {
+        display: block;
+        width: 100%;
+        text-align: justify;
+        padding:0 1em;
+    }
+
+
+ }
+ /*ベジエ導入*/
+ .six-col{
+    background-color: #f9f4f5;
+ }
+ .six-col .container{
+    background: url("images/image6_bg.png") no-repeat;
+    display: block;
+    background-size:contain;
+    height: 1200px;
+ }
+
+ /*従業員のための朝ごはん*/
+ .seven-col{
+    background: url("images/image7_bg.png") repeat;
+    background-size: cover;
+}
+ .seven-col .container{
+    background: url("images/image6_bg.png") no-repeat;
+    display: block;
+    background-size:contain;
+    height: 1200px;
  }
