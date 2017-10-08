@@ -22,9 +22,17 @@
     }
     .line {
         border: dotted 1px #511f0a;
-        padding: 20px;
+        padding: 20px 0;
+    }
+    .line_btm {
+        border-bottom: dotted 1px #511f0a;
+    }
+    .ft120{
+        font-size: 120% !important;
     }
 
+
+ 
 @media only screen and (max-width: 767px) {
     .img-pc{
         display:none;
@@ -44,7 +52,7 @@
     }
     .sp-big{
         font-weight: 600;
-        font-size: 31px
+        font-size: 24px
     }
 
 }
@@ -215,30 +223,20 @@
     background: url("images/image3_bg.jpg") no-repeat;
     display: block;
     background-size: cover;
+    min-height: 1600px;
+}
+.three-col .container {
+    background: url("images/image3_bg_cnt_2.png") no-repeat;
+    display: block;
+    background-size: contain;
+    min-height: 1400px;
+    float: left;
+    margin:3em;
 }
 
-.three-col .cnt {
-    font-size: 31px !important;
-    text-align: left;
-    color:#511f0a;
-    line-height: 200%;
-    letter-spacing: 2px;
-    padding:2em 0;
-    text-shadow: 2px 2px white;
-}
+
 /* mobile*/
 @media only screen and (max-width: 767px) {
-
-    .three-col .cnt p {
-     font-size: 21px !important;
-     letter-spacing:0 !important;
-     line-height: 200%;
-     font-weight: 500;
-     text-shadow: 2px 2px white;
-    }
-    .three-col .cnt br{
-        display:none;
-    }
     
 }
 
@@ -260,24 +258,32 @@
  .five-col .container{
     background: url("images/image5_bg.png") no-repeat;
     display: block;
-    background-size:contain;
-    height: 3000px;
+    background-size:cover;
+    height: 3900px;
     margin: 0 auto;
     
  }
+ .three-col-sp, 
  .five-col-sp,
- .six-col-sp
+ .six-col-sp,
+ .seven-col-sp
  {
     display: none;
  }
 
  @media only screen and (max-width: 767px) {
+    .three-col,
     .five-col,
-    .six-col {
+    .six-col,
+    .seven-col
+     {
        display: none;
-    }  
+    } 
+    .three-col-sp, 
     .five-col-sp,
-    .six-col-sp {
+    .six-col-sp,
+    .seven-col-sp
+    {
         display: block;
         width: 100%;
         text-align: justify;
@@ -286,6 +292,7 @@
 
 
  }
+
  /*ベジエ導入*/
  .six-col{
     background-color: #f9f4f5;
@@ -303,8 +310,8 @@
     background-size: cover;
 }
  .seven-col .container{
-    background: url("images/image6_bg.png") no-repeat;
+    background: url("images/image7_bg_cnt.png") no-repeat;
     display: block;
     background-size:contain;
-    height: 1200px;
+    height: 2000px;
  }
